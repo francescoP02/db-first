@@ -1,0 +1,25 @@
+USED CARS
+
+id - INT - UNSIGNED - PRIMARY KEY - NOTNULL - AUTO_INCREMENT - UNIQUE //es. 1
+model - VARCHAR(30) - NOTNULL //es. GLC 250
+brand - VARCHAR(20) - NOTNULL //es. Mercedes-Benz
+traveled_km - MEDIUMINT - NOTNULL //es. 20000 km
+previus_owner - VARCHAR(20) - NOTNULL //es. 1 proprietario
+fuel_type - VARCHAR(15) - NOTNULL //es. Diesel
+combined_consumption - VARCHAR(30) - NULL //es. 5,3 l/100 km (comb.)^2
+co2_emission - VARCHAR(30)- NULL //es. 105 g/km (comb.)^2
+price_€ -  DECIMAL(9,2) - NOTNULL //es. 36.000,99
+dealer - VARCHAR(30) - NULL //es. Concessionaria
+first_car_registration - DATE - NOTNULL //es. 2018/10/10
+transmission - VARCHAR(20) - NOTNULL //es. Automatico
+traction - VARCHAR(15) - NULL //es. 4x4
+doors - TINYINT - NOTNULL //es. 5
+seats - TINYINT - NOTNULL //es. 5
+car_body - VARCHAR(30) - NULL //es. SUV/Fuoristrada/Pick-up
+emissions_class - VARCHAR(20) - NULL //es. euro 6
+optional - TEXT - NOTNULL //es. Cerchi in lega, Start/Stop Automatico, Sensore di pioggia, Parcheggio assistito, etc.
+color - VARCHAR(20) - NOTNULL //es. Grigio metallizzato
+interior_color - VARCHAR(30) - NOTNULL //es. Nero
+interior_material - VARCHAR(30) - NULL //es. Pelle totale
+img - TEXT - NOTNULL - DEFAULT("/img/default.jpg"); //es. /img/Mercedes_Benz_GLC_250.jpg
+used_guaranteed - VARCHAR(20) - NULL //es. 24 mesi
